@@ -9,7 +9,12 @@ const ToDoItemDiv = styled.div`
 	#title {
 		justify-self: start;
 		align-self: center;
-		background-color: aliceblue;
+		background-color: hsla(
+			240,
+			1.9607843137254923%,
+			30.000000000000004%,
+			0.644
+		);
 		margin-bottom: 1rem;
 		grid-column: span 2;
 	}
@@ -28,7 +33,7 @@ const ToDoItemDiv = styled.div`
 	}
 	button {
 		all: unset;
-		/* background-color: grey; */
+		background-color: grey;
 	}
 `;
 
