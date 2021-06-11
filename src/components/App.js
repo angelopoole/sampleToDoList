@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import ToDoScreen from '../screens/ToDoScreen';
 
 const ApplicationStyles = styled.div`
-	background-color: red;
+	background-color: grey;
+	height: 100vh;
 `;
 
 function App() {
