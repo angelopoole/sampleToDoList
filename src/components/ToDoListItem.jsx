@@ -6,6 +6,8 @@ const ToDoItemDiv = styled.div`
 	grid-template-columns: 3rem 5rem 2rem;
 	grid-template-rows: 2rem 5rem 5rem;
 	margin-top: 3rem;
+	background-color: azure;
+	margin: -3px-3px-3px-3px;
 	#title {
 		justify-self: start;
 		align-self: center;
@@ -39,15 +41,17 @@ const ToDoItemDiv = styled.div`
 
 const removeButton = styled.button``;
 
-const ToDoListItem = ({ toDoItem }) => {
+const ToDoListItem = ({ toDoItem, removeButtonClickHandler }) => {
 	// console.log(title, description);
-
 	let { title, description } = toDoItem;
+
 	return (
 		<ToDoItemDiv>
 			<h3 id='title'>{title}</h3>
 			<p id='content'>{description}</p>
-			<button id='removeButton'>❌</button>
+			<button id='removeButton' onClick={() => removeButtonClickHandler(title)}>
+				❌
+			</button>
 		</ToDoItemDiv>
 	);
 };
